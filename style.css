@@ -1,0 +1,595 @@
+/* general */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(201, 201, 201);
+}
+
+/* navbar */
+.navbar2 {
+    display: none;
+}
+
+.navbar1 {
+    background-color: #3F51B5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    gap: 40px;
+    z-index: 1000;
+}
+
+.navbar1 img {
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    font-style: none;
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+    font-weight: bold;
+}
+
+a:hover {
+    transform: translateY(-4px);
+    color: #2c3a86;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* main y section */
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    width: 85%;
+    margin-left: 15%;
+    padding: 0 60px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+
+/* secciones */
+h1 {
+    color: #3F51B5;
+    font-size: 60px;
+}
+
+.frontEnd {
+    color: #2c3a86;
+    font-size: 30px;
+}
+
+.descSobreMi {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c3986cc;
+}
+
+.button:hover {
+    transform: none;
+}
+
+button {
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background-color: #3F51B5;
+    color: white;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+button:hover {
+    background-color: #F0F0F0;
+    color: black;
+    transform: translateY(-4px);
+}
+
+.language2 {
+    display: none;
+}
+
+.language {
+    background-color: #F0F0F0;
+    color: black;
+}
+
+.language:hover {
+    background-color: #2c3a86;
+    color: white;
+}
+
+h2 {
+    color: #3F51B5;
+    font-size: 60px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    gap: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+}
+
+.card h4 {
+    font-size: 16px;
+    color: #2c3a86;
+}
+
+.card p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.languages {
+    display: flex;
+    gap: 6px;
+    font-size: 28px;
+}
+
+.links {
+    display: flex;
+    gap: 12px;
+    font-size: 28px;
+}
+
+.links i {
+    color: #2c3a86;
+}
+
+#educacion {
+    gap: 60px;
+}
+
+.educacion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.educacion-container div {
+    display: flex;
+    gap: 80px;
+}
+
+.educacion-container div h4 {
+    color: #2c3a86;
+    font-size: 18px;
+}
+
+.educacion-container div p {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.educacion-container h5 {
+    font-size: 16px;
+}
+
+.skills-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 40%;
+    gap: 60px;
+}
+
+.skills-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.skills-container div:hover {
+    transform: scale(1.2);
+}
+
+.skills-container div img {
+    width: 80px;
+}
+
+#contacto {
+    border: none;
+}
+
+.contacto-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    align-self: flex-start;
+}
+
+.contacto-container div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contacto-container div p {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.contacto-container div a {
+    color: #2c3a86;
+    font-size: 60px;
+}
+
+.contacto-container div a:hover {
+    color: black;
+}
+
+/* media queries */
+@media(max-width:1024px) {
+    .language {
+        width: 100px;
+    }
+
+    .card-container {
+        gap: 28px;
+    }
+
+    .card {
+        width: 250px;
+        height: 300px;
+    }
+
+    .card h4 {
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:768px) {
+    .language {
+        width: 90px;
+    }
+
+    .skills-container div img {
+        width: 70px;
+    }
+}
+
+@media(max-width:425px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navbar1 {
+        display: none;
+    }
+
+    .navbar2 {
+        background-color: #3F51B5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 18px;
+        width: 100%;
+    }
+
+    ul {
+        flex-direction: row;
+        font-size: 14px;
+        gap: 20px;
+    }
+
+    a {
+        font-weight: normal;
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .frontEnd {
+        font-size: 24px;
+    }
+
+    .descSobreMi {
+        font-size: 14px;
+    }
+
+    .language2 {
+        display: inline-block;
+        width: 90px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    #portfolio {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .card-container {
+        gap: 26px;
+    }
+
+    .card {
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+        transition: all .3s ease;
+        position: relative;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+        top: 0;
+        left: 0;
+    }
+
+    .card h4 {
+        font-size: 16px;
+        margin-top: auto;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .languages {
+        font-size: 24px;
+    }
+
+    .links {
+        margin-bottom: auto;
+    }
+
+    .card:hover img {
+        opacity: 0;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+
+    .contacto-container div p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:375px) {
+    ul {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    .frontEnd {
+        font-size: 16px;
+    }
+
+    .descSobreMi {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    .card {
+        padding: 6px;
+    }
+
+    .card h4 {
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .languages {
+        font-size: 22px;
+    }
+
+    .educacion-container p {
+        font-size: 12px;
+    }
+
+    .educacion-container div h4 {
+        font-size: 14px;
+    }
+
+    .educacion-container div p {
+        font-size: 14px;
+    }
+
+    .educacion-container h5 {
+        font-size: 12px;
+    }
+
+    .skills-container div {
+        font-size: 16px;
+    }
+
+    .contacto-container div {
+        gap: 16px;
+    }
+
+    .contacto-container div p {
+        font-size: 12px;
+    }
+
+    .contacto-container div a {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:320px) {
+    ul {
+        font-size: 9px;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .frontEnd {
+        font-size: 16px;
+    }
+
+    .descSobreMi {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    .language2 {
+        margin-top: 12px;
+        font-size: 12px;
+        width: 80px;
+    }
+
+    section {
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .card {
+        padding: 6px;
+    }
+
+    .card h4 {
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .languages {
+        font-size: 22px;
+    }
+
+    .educacion-container p {
+        font-size: 12px;
+    }
+
+    .educacion-container div h4 {
+        font-size: 14px;
+    }
+
+    .educacion-container div p {
+        font-size: 14px;
+    }
+
+    .educacion-container h5 {
+        font-size: 12px;
+    }
+
+    .skills-container div {
+        font-size: 16px;
+    }
+
+    .skills-container div img {
+        width: 60px;
+    }
+
+    .contacto-container div {
+        gap: 16px;
+    }
+
+    .contacto-container div p {
+        font-size: 12px;
+    }
+
+    .contacto-container div a {
+        font-size: 40px;
+    }
+}
